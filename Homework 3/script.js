@@ -57,7 +57,7 @@ function createDebounceFunction(func, delay) {
     return function (...args) {
         clearTimeout(timer);
         timer = setTimeout(() => {
-            func.call(this, args);
+            func.apply(this, args);
         }, delay);
     }
 }
