@@ -65,7 +65,10 @@ class Stack {
         return newStack;
     }
 }
-
+ let stack = new Stack(-5);
+ stack.push('ssadad')
+ stack.push('2132123')
+ 
 
 class LinkedList {
     constructor() {
