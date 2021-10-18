@@ -70,9 +70,6 @@ class Car{
     }
 
     set fuelConsumption(value) {
-        if(!this.#isStarted) {
-            throw new Error('Заведите автомбиль и начните движение чтобы узнать расход');
-        }
         if(typeof value !== 'number' || isNaN(value) || value < 0 || value > Number.MAX_SAFE_INTEGER) {
             throw new Error('Расход топлива должен быть числом больше 0');;
         } else {
